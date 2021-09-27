@@ -1,0 +1,44 @@
+newmtl Part1Mtl
+Material Color
+Ka 0.20836 0.20836 0.20836
+Kd 0.20836 0.20836 0.20836
+Ks 0.117662 0.117662 0.117662 
+
+d 1
+
+Ns 0
+
+newmtl Dummy1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+newmtl Spawnlocation1Mtl
+Material Color
+Ka 0.373615 0.368591 0.383775
+Kd 0.373615 0.368591 0.383775
+Ks 0.0234425 0.0231273 0.02408 
+
+d 1
+
+Ns 0
+
+newmtl Spawnlocation2Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Spawnlocation2Tex.png
+map_Kd Spawnlocation2Tex.png
+map_d Spawnlocation2Tex.png
+
