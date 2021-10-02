@@ -1,0 +1,8 @@
+# : comments
+
+#ignore urls
+*.url
+
+#ignore rbxl,rbxlx
+*.rbxl
+*.rbxlx
