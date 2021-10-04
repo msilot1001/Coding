@@ -2,7 +2,7 @@ local UIS = game:GetService("UserInputService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local CollectionService = game:GetService("CollectionService")
 local AssetFolder = ReplicatedStorage.Assets
-local BlockFolder = AssetFolder.Blocks
+local StrucFolder = AssetFolder.Structure
 local localplayer = game.Players.LocalPlayer
 local RemoteEventFolder = game.ReplicatedStorage.RemoteEvents
 
@@ -11,7 +11,7 @@ local EntityDestroy = RemoteEventFolder.EntityDestroy
 
 EntityPlace.OnServerEvent:Connect(function(client,posx,posy,posz,blockcode)
     if blockcode == 1 then
-        local BuildingObj = BlockFolder.Place1:Clone()
+        local BuildingObj = StrucFolder.Place1:Clone()
         BuildingObj.Parent = game.Workspace
         BuildingObj.pos = Vector3(posx, posy, posz)
     end

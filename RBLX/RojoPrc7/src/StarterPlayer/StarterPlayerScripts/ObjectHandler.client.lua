@@ -2,7 +2,7 @@ local UIS = game:GetService("UserInputService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local CollectionService = game:GetService("CollectionService")
 local AssetFolder = ReplicatedStorage.Assets
-local BlockFolder = AssetFolder.Blocks
+local StrucFolder = AssetFolder.Structure
 
 --Building Variable
 local currentMode = nil
@@ -45,7 +45,7 @@ UIS.InputBegan:Connect(function(input, inGui)
 		if currentMode ~= "Build" then
 			currentMode = "Build"
 
-			currentObject = BlockFolder.Building1:Clone()
+			currentObject = StrucFolder.Building1:Clone()
 			currentObject.Parent = workspace
 
 			CollectionService:AddTag(currentObject,"IgnoreCamera")
@@ -85,9 +85,9 @@ local function getPlacementPos(size)
 	local newModelSize = getRotatedSize(size)
 
 	return Vector3.new(
-		math.floor(mouseHitPos.X / 2 + 2) * 4 + mouseHitNormal.X * (newModelSize.X / 2),
+		math.floor(mouseHitPos.X / 2 - 0.5) * 4 + mouseHitNormal.X * (newModelSize.X / 2) - 2,
 		math.floor(mouseHitPos.Y / 0.5 + 0.5) * 0.5 + mouseHitNormal.Y * (newModelSize.Y / 2),
-		math.floor(mouseHitPos.Z / 2 + 2) * 4 + mouseHitNormal.Z * (newModelSize.Z / 2)
+		math.floor(mouseHitPos.Z / 2 - 0.5) * 4 + mouseHitNormal.Z * (newModelSize.Z / 2) - 2
 	)
 end
 
