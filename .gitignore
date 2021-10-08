@@ -1,4 +1,5 @@
 # : comments
+*.txt
 
 #ignore urls
 *.url

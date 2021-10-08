@@ -8,3 +8,9 @@ local RemoteEventFolder = game.ReplicatedStorage.RemoteEvents
 local StructureFrame = script.Parent.StructureFrame
 local Character = localplayer.Character or localplayer.Character:Wait()
 local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
+
+local mouse = localplayer:GetMouse()
+
+local YBuildingOffset = 5
+local maxPlacingDis = 50
+local rKeyIsPressed
