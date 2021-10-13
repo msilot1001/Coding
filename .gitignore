@@ -1,5 +1,6 @@
 # : comments
 *.txt
+config.json
 
 #ignore urls
 *.url
@@ -7,3 +8,6 @@
 #ignore rbxl,rbxlx
 *.rbxl
 *.rbxlx
+
+/UE5
+/Discord/JSBot1/node_modules
