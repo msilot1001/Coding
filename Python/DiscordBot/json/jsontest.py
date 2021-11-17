@@ -57,4 +57,3 @@ def save_member_data(member_ID, member_data):
     data[member_ID] = member_data
     with open(data_filename, "wb") as file:
         pickle.dump(data, file)
-client.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

@@ -149,5 +149,3 @@ def save_member_agreedata(member_ID, member_data):
 def if_agreed(id):
     agreedata = load_member_agreedata(id)
     return agreedata.agree
-
-
