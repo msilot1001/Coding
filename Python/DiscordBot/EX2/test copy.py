@@ -93,5 +93,3 @@ async def userinfo(ctx, member: discord.Member):
 
 
 
-
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

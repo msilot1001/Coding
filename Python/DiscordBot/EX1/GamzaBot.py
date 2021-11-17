@@ -33,4 +33,3 @@ async def on_message(message):
 timesec = time.time()
 tm = time.gmtime(timesec)
 print("[",tm.tm_hour+9,":",tm.tm_min,":",tm.tm_sec,"]","봇 실행")
-client.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

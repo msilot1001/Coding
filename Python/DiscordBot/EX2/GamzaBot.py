@@ -33,4 +33,3 @@ async def on_message(message):#메세지 감지
 
 
 # 봇을 실행시키기 위한 토큰을 작성해주는 곳
-client.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

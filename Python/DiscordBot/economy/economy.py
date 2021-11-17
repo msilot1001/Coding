@@ -58,4 +58,4 @@ async def open_account(user):
         json.dump(users,f)
         return True
 
-client.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')
+=

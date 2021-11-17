@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "55d6111c-cbb2-4b49-a8b4-1527a2428f4a": {
+      "ProjectGuid": "55d6111c-cbb2-4b49-a8b4-1527a2428f4a",
+      "DisplayName": "Toxicity",
+      "ColorIndex": 0
+    },
+    "27e35ffb-a2ab-4bb9-ab36-eb336202c31b": {
+      "ProjectGuid": "27e35ffb-a2ab-4bb9-ab36-eb336202c31b",
+      "DisplayName": "Toxicity1",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

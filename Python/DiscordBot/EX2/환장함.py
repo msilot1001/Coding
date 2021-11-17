@@ -23,5 +23,3 @@ async def status(ctx):
     embed.add_field(name="비밀방 입장: 2021/06/03 09:37 pm ",value="새로운 비밀방 입장",inline=False)
     embed.add_field(name="비밀방 추방: 2021/06/03 09:40 pm 추정",value="도배 후 강제 퇴장",inline=False)
     await ctx.send(embed = embed)
-
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

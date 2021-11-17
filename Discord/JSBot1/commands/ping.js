@@ -5,14 +5,17 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
-	async execute(client, interaction) {
+	async execute(client, interaction, userinfo, User) {
         const PingEmbed = new MessageEmbed()
         .setColor('#CB7ACF')
-        .setTitle('Ping(Latency) :ping_pong:')
-        .setAuthor('StarByte', 'https://discord.com/channels/786390843082014744/786810256709255179/898209754730598440')
+        .setTitle(':ping_pong:\u0020\u0020Ping! Pong! ')
+        .setAuthor('StarByte', 'https://media.discordapp.net/attachments/786810256709255179/898209754533474324/StarByte.png?width=676&height=676')
         .setDescription(`Ping : ${client.ws.ping}ms`)
+        .addFields(
+            { name: 'Requested by', value: `${interaction.user.username}, ${interaction.user.id}` }
+        )
         .setTimestamp()
-        .setFooter('StarByte', 'https://discord.com/channels/786390843082014744/786810256709255179/898209754730598440');
+        .setFooter('StarByte', 'https://media.discordapp.net/attachments/786810256709255179/898209754533474324/StarByte.png?width=676&height=676');
 		await interaction.reply({ embeds : [PingEmbed]});
 	},
 };

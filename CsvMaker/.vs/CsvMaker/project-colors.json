@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "db7137e5-72d6-4d1a-a0e6-18c7e1072115": {
+      "ProjectGuid": "db7137e5-72d6-4d1a-a0e6-18c7e1072115",
+      "DisplayName": "CsvMaker",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

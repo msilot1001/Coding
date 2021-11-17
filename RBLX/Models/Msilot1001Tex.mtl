@@ -1,0 +1,84 @@
+newmtl Msilot10012Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10012Tex.png
+map_Kd Msilot10012Tex.png
+map_d Msilot10012Tex.png
+
+newmtl Msilot10011Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10011Tex.png
+map_Kd Msilot10011Tex.png
+map_d Msilot10011Tex.png
+
+newmtl Msilot10013Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10013Tex.png
+map_Kd Msilot10013Tex.png
+map_d Msilot10013Tex.png
+
+newmtl Msilot10014Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10014Tex.png
+map_Kd Msilot10014Tex.png
+map_d Msilot10014Tex.png
+
+newmtl Msilot10015Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10015Tex.png
+map_Kd Msilot10015Tex.png
+map_d Msilot10015Tex.png
+
+newmtl Msilot10016Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Msilot10016Tex.png
+map_Kd Msilot10016Tex.png
+map_d Msilot10016Tex.png
+

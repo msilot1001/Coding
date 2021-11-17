@@ -18,4 +18,3 @@ async def parrot(ctx,text):
     embed = discord.Embed(title = ':bird:따라하기무새!', description = text, color = 0x8dceee)
     await ctx.send(embed = embed)
 
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

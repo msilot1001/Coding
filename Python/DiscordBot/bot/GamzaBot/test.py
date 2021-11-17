@@ -226,7 +226,7 @@ def save_member_data(member_ID, member_data):
     with open(data_filename, "wb") as file:
         pickle.dump(data, file)
 
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')
+
 
 #embed.add_field(name="$botsetting changestatus [상태메세지]", value="봇의 상태메세지를 바꿉니다", inline=False)
 #embed.add_field(name="$help", value="명령어 목록", inline=False)

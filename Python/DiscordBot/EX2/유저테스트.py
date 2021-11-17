@@ -18,5 +18,3 @@ async def on_ready():
     @commands.has_role("Operator")
     async def ifAdmin(ctx):
         await ctx.send("It's Operator")
-
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

@@ -21,5 +21,3 @@ async def ping(ctx):
     em = discord.Embed(title = "Ping",description = "핑을 확인합니다")
     em.add_field(name="**문법**",value="$cmd ping")
     await ctx.send(embed = em)
-
-cli.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

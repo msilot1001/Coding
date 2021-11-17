@@ -151,4 +151,3 @@ def if_agreed(id):
     return agreedata.agree
 
 
-client.run('ODUzMjMzNDEyMTA5MTA3MjIw.YMSZiQ.BqrlaEK-ianRyzIzz7d86X05DAU')

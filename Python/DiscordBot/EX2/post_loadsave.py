@@ -11,5 +11,3 @@ bot = commands.Bot(command_prefix='$')
 async def on_ready():
     print("start")
     await bot.change_presence(status=discord.Status.online, activity=discord.Game("테스트"))
-
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

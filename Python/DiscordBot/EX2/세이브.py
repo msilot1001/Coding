@@ -44,4 +44,3 @@ async def game(ctx,text):
 
 
 bot.loop.create_task(update_stat())
-bot.run('ODQ3MzgzOTQ1NjE0OTgzMTY4.YK9RzA.ifiZW0fHwsVcNDl--nb4camgc2M')

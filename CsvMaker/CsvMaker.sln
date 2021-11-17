@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CsvMaker", "CsvMaker\CsvMaker.csproj", "{DB7137E5-72D6-4D1A-A0E6-18C7E1072115}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB866053-DFF7-46FA-B4B7-5823576D0CEF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB7137E5-72D6-4D1A-A0E6-18C7E1072115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB7137E5-72D6-4D1A-A0E6-18C7E1072115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB7137E5-72D6-4D1A-A0E6-18C7E1072115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB7137E5-72D6-4D1A-A0E6-18C7E1072115}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EB8B12D-2796-4A0D-85F7-568A814AB342}
+	EndGlobalSection
+EndGlobal

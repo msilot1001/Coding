@@ -11,3 +11,6 @@ config.json
 
 /UE5
 /Discord/JSBot1/node_modules
+/Discord/JSBot1/config.json
+/Discord/JSBot1/json.sqlite
+/JS/1/node_modules
