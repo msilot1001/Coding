@@ -2,22 +2,24 @@ const mongoose = require("mongoose")
 
 const userSchema = mongoose.Schema({
 id: {
-    type: Number,
+    type: String,
+    require : true
 },
 username: {
     type: String,
+    required : true
 },
 bank: {
     type: Number,
+    required : true
 },
 wallet: {
     type: Number,
+    required : true
 },
 bitcoins: {
     type: Number,
-},
-agreed: {
-    type: Boolean,
+    required : true
 }
 })
 

@@ -5,7 +5,7 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
-	async execute(client, interaction, userinfo, User) {
+	async execute(client, interaction, userinfo, User, db) {
         const PingEmbed = new MessageEmbed()
         .setColor('#CB7ACF')
         .setTitle(':ping_pong:\u0020\u0020Ping! Pong! ')

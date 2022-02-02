@@ -21,14 +21,16 @@ for (const file of commandFiles) {
 
 const mongoose = require("mongoose");
 
-const connect = mongoose.connect(dbkey, {
-	useNewUrlParser : true,
-	useUnifiedTopology : true,
-	useFindAndModify : true,
-}).then(() => console.log("==> MongoDB Connected..."))
-.catch(err => console.error(err));
+function DbConnect() {
+	const connect = mongoose.connect(dbkey, {
+		useNewUrlParser : true,
+		useUnifiedTopology : true,
+		useFindAndModify : true,
+	}).then(() => console.log("==> MongoDB Connected..."))
+	.catch(err => console.error(err));
+}
 
-
+DbConnect();
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -46,7 +48,13 @@ client.on('interactionCreate', async interaction => {
 
 		console.log(`${interaction.user.username}#${interaction.user.discriminator} Requested Command \"${interaction.commandName}\"`)
 
+		await mongoose.connection.on('disconnected', DbConnect);
+
 		await User.findOne({ id: interaction.user.id}, async (err, user) => {
+			if(err) { interaction.reply({ content: 'Error occured. Please try after.', ephemeral: true }); }
+			else{
+				console.log(user);
+			}
 			if (!user) {
 				const newUser = new User({
 					id: interaction.user.id,
@@ -78,16 +86,22 @@ client.on('interactionCreate', async interaction => {
 			}
 			else{
 				//update and pass
-				db.set(`work_${interaction.user.id}`, Date.now())
+				await db.set(`workbefore_${interaction.user.id}`, lastwork)
+				await db.set(`work_${interaction.user.id}`, Date.now())
 			}
 		}
 		
-		await command.execute(client, interaction, userinfo, User);
+		await command.execute(client, interaction, userinfo, User, db);
 	} catch (error) {
 		console.error(error);
 		console.log(`Error Occured at \"${interaction.commandName}\" Requested by ${interaction.user.username}#${interaction.user.discriminator} `)
+		if(interaction.commandName == 'work') {
+			let workcooldown = 60000;
+			let lastwork = await db.fetch(`workbefore_${interaction.user.id}`);
+			await db.set(`work_${interaction.user.id}`, lastwork)
+		}
 		return interaction.reply({ content: 'Error occured. Please try after.', ephemeral: true });
 	}
 });
-
+	
 client.login(token)
