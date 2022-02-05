@@ -4,8 +4,10 @@
   "description": "Test Bot",
   "main": "index.js",
   "dependencies": {
-    "@tensorflow/tfjs": "^3.11.0",
-    "@tensorflow/tfjs-node": "^3.11.0"
+    "@discordjs/rest": "^0.3.0",
+    "@tensorflow/tfjs": "^3.13.0",
+    "@tensorflow/tfjs-node": "^3.13.0",
+    "node-fetch": "^3.2.0"
   },
   "scripts": {
     "start": "node index.js",
