@@ -21,7 +21,7 @@ for (const file of commandFiles) {
 
 const mongoose = require("mongoose");
 
-function DbConnect() {
+function DBConnect() {
 	const connect = mongoose.connect(dbkey, {
 		useNewUrlParser : true,
 		useUnifiedTopology : true,
