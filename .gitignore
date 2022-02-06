@@ -10,7 +10,7 @@ config.json
 *.rbxlx
 
 /UE5
-/Discord/JSBot1
+/Discord/StarByte
 
 /JS/1/node_modules
 /JS/2/node_modules
