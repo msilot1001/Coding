@@ -5,9 +5,38 @@ module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('wallet')
 		.setDescription('Checks your wallet\'s balance'),
-	async execute(client, interaction, userinfo, User, db) {
-        if (userinfo.wallet = null) { return interaction.reply({content:`Please try ${lefttime} seconds later.`, ephemeral : true }); }
-        const balance = userinfo.wallet;
+	async execute(client, interaction, User, db, mongoose, DBConnect) {
+        let userinfo;
+
+        await mongoose.connection.on('disconnected', DBConnect);
+
+		await User.findOne({ id: interaction.user.id}, async (err, user) => {
+			if(err) { interaction.reply({ content: 'Error occured. Please try after.', ephemeral: true }); }
+			else{
+				console.log(user);
+			}
+			if (!user) {
+				const newUser = new User({
+					id: interaction.user.id,
+					username: interaction.user.username,
+					bank: 0,
+					wallet: 0,
+					bitcoins: 0,
+					agreed: 0
+				});
+				await newUser.save((err, doc) => {
+					if (err) console.log(`Failed to save user ${interaction.user.id}!`, err)
+					console.log(`new user ${interaction.user.id} saved`);
+				});
+			}
+			userinfo = user;
+		}).clone().catch(function(err){ console.log(err)})
+
+        console.log(userinfo.wallet)
+        if (userinfo.wallet == null) { return interaction.reply({content:`Wallet value null`, ephemeral : true }); }
+        var balance = userinfo.wallet;
+
+        console.log(balance);
 
         const WalletEmbed = new MessageEmbed()
         .setColor('#CB7ACF')
